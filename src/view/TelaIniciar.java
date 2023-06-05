@@ -4,17 +4,26 @@
  */
 package view;
 
+import DTO.RegistroNome;
+
+
+
+
 /**
  *
  * @author aluno
  */
 public class TelaIniciar extends javax.swing.JFrame {
-
+    
+    
     /**
      * Creates new form TelaIniciar
      */
+    
+    
     public TelaIniciar() {
         initComponents();
+        
     }
 
     /**
@@ -26,28 +35,14 @@ public class TelaIniciar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Nome = new javax.swing.JTextField();
         bntSair0 = new javax.swing.JButton();
         btnstart = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        txtNome = new javax.swing.JTextField();
+        i = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Nome.setFont(new java.awt.Font("MingLiU_HKSCS-ExtB", 1, 36)); // NOI18N
-        Nome.setBorder(null);
-        Nome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NomeActionPerformed(evt);
-            }
-        });
-        Nome.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                NomeKeyPressed(evt);
-            }
-        });
-        getContentPane().add(Nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, 590, 60));
 
         bntSair0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/pixil-frame-0.png"))); // NOI18N
         bntSair0.setBorderPainted(false);
@@ -60,7 +55,7 @@ public class TelaIniciar extends javax.swing.JFrame {
         });
         getContentPane().add(bntSair0, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, -1, -1));
 
-        btnstart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/MicrosoftTeams-image_1.png"))); // NOI18N
+        btnstart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/buttonplay.png"))); // NOI18N
         btnstart.setBorderPainted(false);
         btnstart.setContentAreaFilled(false);
         btnstart.setFocusPainted(false);
@@ -70,68 +65,48 @@ public class TelaIniciar extends javax.swing.JFrame {
                 btnstartActionPerformed(evt);
             }
         });
-        getContentPane().add(btnstart, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 520, 270, 110));
+        getContentPane().add(btnstart, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 480, 290, 150));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/MicrosoftTeams-image.png"))); // NOI18N
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 680));
+        txtNome.setBorder(null);
+        txtNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 380, 580, 60));
+
+        i.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/MicrosoftTeams-image.png"))); // NOI18N
+        i.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(i, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 830, 680));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void NomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NomeActionPerformed
-
     private void btnstartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnstartActionPerformed
+        RegistroNome  registronome= new RegistroNome();
+        registronome.setNome(txtNome.getText());
         Menu Menu = new Menu();
+        Menu.exportarNome(registronome);
         Menu.setVisible(true);
         dispose();
+        
     }//GEN-LAST:event_btnstartActionPerformed
 
     private void bntSair0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntSair0ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_bntSair0ActionPerformed
 
-    private void NomeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NomeKeyPressed
-     String numFornecido= Nome.getText();
-     int quantcaracteres= numFornecido.length();
-     if(quantcaracteres>25){
-         numFornecido=numFornecido.substring(0,numFornecido.length()-1);
-         Nome.setText(numFornecido);
-     }
-     
-    }//GEN-LAST:event_NomeKeyPressed
+    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomeActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaIniciar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaIniciar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaIniciar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaIniciar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
+              
+  
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new TelaIniciar().setVisible(true);
@@ -140,9 +115,9 @@ public class TelaIniciar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField Nome;
     private javax.swing.JButton bntSair0;
     private javax.swing.JButton btnstart;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel i;
+    private javax.swing.JTextField txtNome;
     // End of variables declaration//GEN-END:variables
 }

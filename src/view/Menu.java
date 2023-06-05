@@ -4,19 +4,23 @@
  */
 package view;
 
-/**
- *
- * @author aluno
- */
+import DTO.RegistroNome;
+
 public class Menu extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
+    
+    
     public Menu() {
         initComponents();
+        
+        
     }
-
+    public void exportarNome( RegistroNome  registronome){
+    iblNome.setText(registronome.getNome());
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,7 +34,9 @@ public class Menu extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         btnSair = new javax.swing.JButton();
         btnVoltar = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        iblNome = new javax.swing.JTextField();
+        fundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1920, 1080));
@@ -39,42 +45,78 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         play.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/playbuttons.png"))); // NOI18N
+        play.setBorder(null);
+        play.setBorderPainted(false);
+        play.setContentAreaFilled(false);
+        play.setFocusPainted(false);
+        play.setFocusable(false);
         play.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 playActionPerformed(evt);
             }
         });
-        getContentPane().add(play, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, -1, 200));
+        getContentPane().add(play, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 220, 200));
 
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 530, 220, 120));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botaoinfoaadd.png"))); // NOI18N
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.setFocusPainted(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 360, 220, 230));
 
         btnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/pixil-frame-0.png"))); // NOI18N
         btnSair.setBorderPainted(false);
         btnSair.setContentAreaFilled(false);
+        btnSair.setFocusPainted(false);
         btnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSairActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 40, -1, -1));
+        getContentPane().add(btnSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 70, -1, -1));
 
         btnVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botaovoltar.png"))); // NOI18N
         btnVoltar.setBorderPainted(false);
         btnVoltar.setContentAreaFilled(false);
+        btnVoltar.setFocusPainted(false);
         btnVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVoltarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 210, 50));
+        getContentPane().add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 210, 50));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menufundo.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        jLabel2.setMaximumSize(new java.awt.Dimension(1920, 1080));
-        jLabel2.setMinimumSize(new java.awt.Dimension(1920, 1080));
-        jLabel2.setPreferredSize(new java.awt.Dimension(1920, 1080));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-300, -90, 1650, 1040));
+        jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("BEM-VINDO(A)");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 660, 270, -1));
+
+        iblNome.setEditable(false);
+        iblNome.setBackground(new java.awt.Color(70, 34, 95));
+        iblNome.setFont(new java.awt.Font("Segoe UI Historic", 0, 36)); // NOI18N
+        iblNome.setAutoscrolls(false);
+        iblNome.setBorder(null);
+        iblNome.setEnabled(false);
+        iblNome.setFocusable(false);
+        iblNome.setRequestFocusEnabled(false);
+        iblNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iblNomeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(iblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 660, 210, 40));
+
+        fundo.setFont(new java.awt.Font("Segoe UI Historic", 3, 36)); // NOI18N
+        fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menufundo.png"))); // NOI18N
+        fundo.setText("jLabel2");
+        fundo.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        fundo.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        fundo.setPreferredSize(new java.awt.Dimension(1920, 1080));
+        getContentPane().add(fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-250, -20, 1910, 1040));
 
         pack();
         setLocationRelativeTo(null);
@@ -91,10 +133,20 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
-        Play play = new Play();
+        PlayMenu1 play = new PlayMenu1();
         play.setVisible(true);
         dispose();
     }//GEN-LAST:event_playActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        MenuInfo pl = new MenuInfo();
+        pl.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void iblNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iblNomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iblNomeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -134,8 +186,10 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSair;
     private javax.swing.JButton btnVoltar;
+    private javax.swing.JLabel fundo;
+    private javax.swing.JTextField iblNome;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton play;
     // End of variables declaration//GEN-END:variables
 }

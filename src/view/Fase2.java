@@ -147,7 +147,7 @@ public class Fase2 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 680, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 690, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase2sombra.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 30, -1, -1));
@@ -240,8 +240,8 @@ public class Fase2 extends javax.swing.JFrame {
        somafase2=d1+d2+d3+d4+d5;
         
          if(somafase2==5){
-          Fase3 fase3= new Fase3();
-          fase3.setVisible(true);
+          ProximaFase2 proximafase2= new ProximaFase2();
+          proximafase2.setVisible(true);
           dispose();
           }else{
              JOptionPane.showMessageDialog(null, " - Pontos insuficientes - "+somafase2); 

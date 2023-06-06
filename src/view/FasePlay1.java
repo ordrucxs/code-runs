@@ -36,6 +36,7 @@ public class FasePlay1 extends javax.swing.JFrame {
         ibt4fase1 = new javax.swing.JLabel();
         ibt5fase1 = new javax.swing.JLabel();
         ibt6fase1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         ibtr1fase1 = new javax.swing.JLabel();
         ibtr2fase1 = new javax.swing.JLabel();
         ibtr3fase1 = new javax.swing.JLabel();
@@ -46,7 +47,6 @@ public class FasePlay1 extends javax.swing.JFrame {
         sombra = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -100,6 +100,9 @@ public class FasePlay1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ibt6fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/enunciadof11.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 240, 570, 430));
 
         ibtr1fase1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -157,7 +160,7 @@ public class FasePlay1 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 650, 240, 80));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 660, 240, 80));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menuinfob.png"))); // NOI18N
         jButton2.setContentAreaFilled(false);
@@ -167,10 +170,6 @@ public class FasePlay1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/enunciado1.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 270, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fundoplay.png"))); // NOI18N
         jLabel1.setText("jLabel1");

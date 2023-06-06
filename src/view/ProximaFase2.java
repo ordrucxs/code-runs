@@ -38,21 +38,24 @@ public class ProximaFase2 extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("PROXIMO LEVEL");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botãoproximafase.png"))); // NOI18N
+        jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, 180, 80));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 250, 80));
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botaopfvoltar.png"))); // NOI18N
         jButton2.setText("VOLTAR");
+        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 180, 80));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 250, 80));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/pixil-frame-0.png"))); // NOI18N
         jButton3.setContentAreaFilled(false);
@@ -79,6 +82,7 @@ public class ProximaFase2 extends javax.swing.JFrame {
         Fase3 fase3 = new Fase3();
         fase3.setVisible(true);
         dispose();
+        fase3=null;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

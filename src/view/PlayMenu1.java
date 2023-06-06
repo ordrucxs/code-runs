@@ -120,9 +120,7 @@ public class PlayMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_botaosairActionPerformed
 
     private void botaofase2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaofase2ActionPerformed
-        Fase2 fase2 = new Fase2();
-        fase2.setVisible(true);
-        dispose();
+       
     }//GEN-LAST:event_botaofase2ActionPerformed
 
     /**

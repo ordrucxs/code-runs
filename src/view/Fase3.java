@@ -143,8 +143,8 @@ public class Fase3 extends javax.swing.JFrame {
         });
         getContentPane().add(ibtr3fase3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 220, 70));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/enunciadofase3.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 100, 820, 180));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/enunciadof3.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 220, 820, 430));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botãoproximafase.png"))); // NOI18N
         jButton1.setText("PROXIMA FASE");
@@ -154,7 +154,7 @@ public class Fase3 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 680, 230, 70));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 660, 230, 70));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menuinfob.png"))); // NOI18N
         jButton2.setContentAreaFilled(false);
@@ -236,6 +236,7 @@ public class Fase3 extends javax.swing.JFrame {
             Creditos creditos = new Creditos();
             creditos.setVisible(true);
             dispose();
+            creditos=null;
           }else{
             String somafase2 = null;
              JOptionPane.showMessageDialog(null, " - Pontos insuficientes - "+somafase2); 

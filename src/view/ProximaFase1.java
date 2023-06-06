@@ -47,21 +47,24 @@ public class ProximaFase1 extends javax.swing.JFrame {
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 139, -1, -1));
 
-        jButton1.setText("PROXIMA FASE");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botãoproximafase.png"))); // NOI18N
+        jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, 190, 70));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, 250, 70));
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botaopfvoltar.png"))); // NOI18N
         jButton2.setText("VOLTAR");
+        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 190, 70));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 260, 70));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/pixil-frame-0.png"))); // NOI18N
         jButton3.setContentAreaFilled(false);
@@ -82,6 +85,7 @@ public class ProximaFase1 extends javax.swing.JFrame {
             Fase2  fase2 = new Fase2();
             fase2.setVisible(true);
             dispose();
+            fase2=null;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

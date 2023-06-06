@@ -67,17 +67,18 @@ public class TelaIniciar extends javax.swing.JFrame {
         });
         getContentPane().add(btnstart, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 480, 290, 150));
 
+        txtNome.setFont(new java.awt.Font("Palatino Linotype", 1, 52)); // NOI18N
         txtNome.setBorder(null);
         txtNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNomeActionPerformed(evt);
             }
         });
-        getContentPane().add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 380, 580, 60));
+        getContentPane().add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, 580, 70));
 
         i.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/MicrosoftTeams-image.png"))); // NOI18N
         i.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(i, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 830, 680));
+        getContentPane().add(i, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 680));
 
         pack();
         setLocationRelativeTo(null);

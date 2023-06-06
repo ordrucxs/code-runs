@@ -45,7 +45,7 @@ public class FasePlay1 extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         sombra = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -59,7 +59,7 @@ public class FasePlay1 extends javax.swing.JFrame {
                 ibt1fase1MouseDragged(evt);
             }
         });
-        getContentPane().add(ibt1fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 560, -1, -1));
+        getContentPane().add(ibt1fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 540, -1, -1));
 
         ibt2fase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/intmain.png"))); // NOI18N
         ibt2fase1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -67,7 +67,7 @@ public class FasePlay1 extends javax.swing.JFrame {
                 ibt2fase1MouseDragged(evt);
             }
         });
-        getContentPane().add(ibt2fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, -1, -1));
+        getContentPane().add(ibt2fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, -1, -1));
 
         ibt3fase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/int valor.png"))); // NOI18N
         ibt3fase1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -75,7 +75,7 @@ public class FasePlay1 extends javax.swing.JFrame {
                 ibt3fase1MouseDragged(evt);
             }
         });
-        getContentPane().add(ibt3fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
+        getContentPane().add(ibt3fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 130, -1, -1));
 
         ibt4fase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/printf1_2.png"))); // NOI18N
         ibt4fase1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -83,7 +83,7 @@ public class FasePlay1 extends javax.swing.JFrame {
                 ibt4fase1MouseDragged(evt);
             }
         });
-        getContentPane().add(ibt4fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, -1, 90));
+        getContentPane().add(ibt4fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, -1, 90));
 
         ibt5fase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/scanf.png"))); // NOI18N
         ibt5fase1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -91,7 +91,7 @@ public class FasePlay1 extends javax.swing.JFrame {
                 ibt5fase1MouseDragged(evt);
             }
         });
-        getContentPane().add(ibt5fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
+        getContentPane().add(ibt5fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 640, -1, 80));
 
         ibt6fase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/printf2.png"))); // NOI18N
         ibt6fase1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -99,7 +99,7 @@ public class FasePlay1 extends javax.swing.JFrame {
                 ibt6fase1MouseDragged(evt);
             }
         });
-        getContentPane().add(ibt6fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
+        getContentPane().add(ibt6fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
 
         ibtr1fase1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -149,21 +149,24 @@ public class FasePlay1 extends javax.swing.JFrame {
         sombra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/sombrafase1.png"))); // NOI18N
         getContentPane().add(sombra, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, -1, -1));
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botãoproximafase.png"))); // NOI18N
         jButton1.setText("Proxima fase");
+        jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 720, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 650, 240, 80));
 
-        jButton3.setText("jButton3");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menuinfob.png"))); // NOI18N
+        jButton2.setContentAreaFilled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 720, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/enunciado1.png"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -276,9 +279,11 @@ public class FasePlay1 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-         System.exit(0);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+            MenuInfo  menuinfo = new MenuInfo();
+            menuinfo.setVisible(true);
+            
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -329,7 +334,7 @@ public class FasePlay1 extends javax.swing.JFrame {
     private javax.swing.JLabel ibtr5fase1;
     private javax.swing.JLabel ibtr6fase1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

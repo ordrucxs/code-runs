@@ -90,16 +90,19 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 210, 50));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 3, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Palatino Linotype", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("BEM-VINDO(A)");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 660, 270, -1));
+        jLabel1.setFocusable(false);
+        jLabel1.setInheritsPopupMenu(false);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 650, 370, -1));
 
         iblNome.setEditable(false);
         iblNome.setBackground(new java.awt.Color(70, 34, 95));
-        iblNome.setFont(new java.awt.Font("Segoe UI Historic", 0, 36)); // NOI18N
+        iblNome.setFont(new java.awt.Font("Palatino Linotype", 1, 48)); // NOI18N
         iblNome.setAutoscrolls(false);
         iblNome.setBorder(null);
+        iblNome.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         iblNome.setEnabled(false);
         iblNome.setFocusable(false);
         iblNome.setRequestFocusEnabled(false);
@@ -108,7 +111,7 @@ public class Menu extends javax.swing.JFrame {
                 iblNomeActionPerformed(evt);
             }
         });
-        getContentPane().add(iblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 660, 210, 40));
+        getContentPane().add(iblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 650, 730, -1));
 
         fundo.setFont(new java.awt.Font("Segoe UI Historic", 3, 36)); // NOI18N
         fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menufundo.png"))); // NOI18N
@@ -139,8 +142,8 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_playActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        MenuInfo pl = new MenuInfo();
-        pl.setVisible(true);
+        Introdução introdução = new Introdução();
+        introdução.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 

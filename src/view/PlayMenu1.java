@@ -31,6 +31,7 @@ public class PlayMenu1 extends javax.swing.JFrame {
         botaofase1 = new javax.swing.JButton();
         botaofase3 = new javax.swing.JButton();
         botaofase2 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         fundo = new javax.swing.JLabel();
@@ -60,7 +61,7 @@ public class PlayMenu1 extends javax.swing.JFrame {
                 botaosairActionPerformed(evt);
             }
         });
-        getContentPane().add(botaosair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 20, -1, -1));
+        getContentPane().add(botaosair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1530, 70, -1, -1));
 
         botaofase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase1play.png"))); // NOI18N
         botaofase1.setBorderPainted(false);
@@ -70,12 +71,12 @@ public class PlayMenu1 extends javax.swing.JFrame {
                 botaofase1ActionPerformed(evt);
             }
         });
-        getContentPane().add(botaofase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 387, -1));
+        getContentPane().add(botaofase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 387, -1));
 
         botaofase3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase3play.png"))); // NOI18N
         botaofase3.setBorderPainted(false);
         botaofase3.setContentAreaFilled(false);
-        getContentPane().add(botaofase3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 150, -1, -1));
+        getContentPane().add(botaofase3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 420, -1, -1));
 
         botaofase2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase2play.png"))); // NOI18N
         botaofase2.setBorderPainted(false);
@@ -85,17 +86,19 @@ public class PlayMenu1 extends javax.swing.JFrame {
                 botaofase2ActionPerformed(evt);
             }
         });
-        getContentPane().add(botaofase2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, 340, -1));
+        getContentPane().add(botaofase2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, 340, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/selecionefase.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 760, 90));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/play2.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 370, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/play3.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 150, -1, 330));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 430, -1, 330));
 
         fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menufundo.png"))); // NOI18N
-        fundo.setText("jLabel3");
-        getContentPane().add(fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-390, 0, -1, -1));
+        getContentPane().add(fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-280, -110, -1, 1110));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -166,5 +169,6 @@ public class PlayMenu1 extends javax.swing.JFrame {
     private javax.swing.JLabel fundo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

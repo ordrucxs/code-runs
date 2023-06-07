@@ -75,7 +75,7 @@ public class FasePlay1 extends javax.swing.JFrame {
                 ibt3fase1MouseDragged(evt);
             }
         });
-        getContentPane().add(ibt3fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 130, -1, -1));
+        getContentPane().add(ibt3fase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
 
         ibt4fase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/printf1_2.png"))); // NOI18N
         ibt4fase1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -174,10 +174,10 @@ public class FasePlay1 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fundoplay.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fundoatt.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jLabel1.setPreferredSize(new java.awt.Dimension(1020, 1080));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -450, 1440, 1710));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -310, 1440, 1710));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

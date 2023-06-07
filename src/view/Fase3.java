@@ -170,9 +170,9 @@ public class Fase3 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fundoplay.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fundoatt.jpg"))); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(1980, 1020));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -220, -1, 1240));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -80, -1, 1240));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

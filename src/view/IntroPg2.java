@@ -30,7 +30,6 @@ public class IntroPg2 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setFocusableWindowState(false);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -45,7 +44,7 @@ public class IntroPg2 extends javax.swing.JFrame {
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 10, 260, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/intropg2.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

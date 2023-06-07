@@ -30,7 +30,6 @@ public class IntroPg3 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setFocusableWindowState(false);
         setMinimumSize(new java.awt.Dimension(1371, 759));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

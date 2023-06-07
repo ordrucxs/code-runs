@@ -44,7 +44,7 @@ public class Introdução extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 10, 260, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/intropg1.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, -30, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

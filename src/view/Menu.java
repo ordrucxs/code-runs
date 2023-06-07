@@ -145,6 +145,7 @@ public class Menu extends javax.swing.JFrame {
         Introdução introdução = new Introdução();
         introdução.setVisible(true);
         dispose();
+        introdução=null;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void iblNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iblNomeActionPerformed

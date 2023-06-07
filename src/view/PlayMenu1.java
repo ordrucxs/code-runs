@@ -61,7 +61,7 @@ public class PlayMenu1 extends javax.swing.JFrame {
                 botaosairActionPerformed(evt);
             }
         });
-        getContentPane().add(botaosair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1530, 70, -1, -1));
+        getContentPane().add(botaosair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 60, -1, -1));
 
         botaofase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase1play.png"))); // NOI18N
         botaofase1.setBorderPainted(false);
@@ -98,7 +98,7 @@ public class PlayMenu1 extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 430, -1, 330));
 
         fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menufundo.png"))); // NOI18N
-        getContentPane().add(fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-280, -110, -1, 1110));
+        getContentPane().add(fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-280, -80, 1930, 1110));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

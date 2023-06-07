@@ -154,6 +154,7 @@ public class FasePlay1 extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/botãoproximafase.png"))); // NOI18N
         jButton1.setText("Proxima fase");
+        jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,6 +164,8 @@ public class FasePlay1 extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 660, 240, 80));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/menuinfob.png"))); // NOI18N
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -272,6 +275,7 @@ public class FasePlay1 extends javax.swing.JFrame {
             ProximaFase1  proximafase1 = new ProximaFase1();
             proximafase1.setVisible(true);
             dispose();
+            proximafase1=null;
             
         }else{
              JOptionPane.showMessageDialog(null, " - Pontos insuficientes - "+soma); 

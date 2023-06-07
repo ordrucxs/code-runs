@@ -90,7 +90,7 @@ public class ProximaFase1 extends javax.swing.JFrame {
             Fase2  fase2 = new Fase2();
             fase2.setVisible(true);
             dispose();
-            fase2=null;
+           
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

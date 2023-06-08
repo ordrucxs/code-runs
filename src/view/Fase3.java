@@ -58,6 +58,7 @@ public class Fase3 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -179,6 +180,17 @@ public class Fase3 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/help.png"))); // NOI18N
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
+        jButton3.setContentAreaFilled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 10, -1, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fundoatt.jpg"))); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(1980, 1020));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -80, -1, 1240));
@@ -267,9 +279,15 @@ public class Fase3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       MenuInfof3 menuinfof3 = new MenuInfof3();
-       menuinfof3.setVisible(true);
+       MenuInfo3 menuinfo3 = new MenuInfo3();
+       menuinfo3.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Helpf3 helpf3 = new Helpf3();
+        helpf3.setVisible(true);
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
    public void Verificacaofase3(){
         somafase3=pontos1+pontos2+pontos3+pontos4;
         if(somafase3==4){
@@ -323,6 +341,7 @@ public class Fase3 extends javax.swing.JFrame {
     private javax.swing.JLabel ibtr4fase3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;

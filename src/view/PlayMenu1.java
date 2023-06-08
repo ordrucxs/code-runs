@@ -60,7 +60,7 @@ private ArquivoDAO arquivodao;
                 botaosairActionPerformed(evt);
             }
         });
-        getContentPane().add(botaosair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 60, -1, -1));
+        getContentPane().add(botaosair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 20, -1, -1));
 
         botaofase1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase1play.png"))); // NOI18N
         botaofase1.setBorderPainted(false);

@@ -4,17 +4,25 @@
  */
 package view;
 
+import DAO.ArquivoDAO;
+import DTO.ArquivoDTO;
+
 /**
  *
  * @author pedro
  */
 public class MenuInfof2 extends javax.swing.JFrame {
-
+private ArquivoDTO arquivodto;
+private ArquivoDAO arquivodao;
+private Fase2 fase2;
     /**
      * Creates new form MenuInfof2
      */
     public MenuInfof2() {
         initComponents();
+        arquivodao = new ArquivoDAO();
+        arquivodto = new ArquivoDTO();
+        
     }
 
     /**
@@ -89,7 +97,17 @@ public class MenuInfof2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       System.exit(0);
+      arquivodto.setId_dois(1);
+        arquivodto.setDoispeca_um(fase2.d1);
+        arquivodto.setDoispeca_dois(fase2.d2);
+        arquivodto.setDoispeca_tres(fase2.d3);
+        arquivodto.setDoispeca_quatro(fase2.d4);
+        arquivodto.setDoispeca_cinco(fase2.d5);
+        arquivodto.setDoispeca_seis(fase2.d6);
+        arquivodto.setTotal_pecasdois(fase2.somafase2);
+        arquivodao.InserirPecasFasesDois(arquivodto);
+        
+        System.exit(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

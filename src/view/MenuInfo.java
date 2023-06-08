@@ -4,17 +4,24 @@
  */
 package view;
 
+import DAO.ArquivoDAO;
+import DTO.ArquivoDTO;
+
 /**
  *
  * @author pedro
  */
 public class MenuInfo extends javax.swing.JFrame {
-
+private ArquivoDTO arquivodto;
+private ArquivoDAO arquivodao;
+private FasePlay1 fase1;
     /**
      * Creates new form MenuInfo
      */
     public MenuInfo() {
         initComponents();
+        arquivodao = new ArquivoDAO();
+        arquivodto = new ArquivoDTO();
     }
 
     /**
@@ -81,13 +88,25 @@ public class MenuInfo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+     
         FasePlay1 play2 = new FasePlay1();
         play2.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-      System.exit(0);
+      
+        arquivodto.setId_um(10);
+        arquivodto.setUmpeca_um(fase1.pontos);
+        arquivodto.setUmpeca_dois(fase1.pontos1);
+        arquivodto.setUmpeca_tres(fase1.pontos2);
+        arquivodto.setUmpeca_quatro(fase1.pontos3);
+        arquivodto.setUmpeca_cinco(fase1.pontos4);
+        arquivodto.setUmpeca_seis(fase1.pontos5);
+        arquivodto.setTotal_pecasum(fase1.soma);
+        arquivodao.InserirPecasFasesUm(arquivodto);
+        
+        System.exit(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

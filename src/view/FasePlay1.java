@@ -4,6 +4,8 @@
  */
 package view;
 
+import DAO.ArquivoDAO;
+import DTO.ArquivoDTO;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -14,11 +16,18 @@ import javax.swing.JOptionPane;
 public class FasePlay1 extends javax.swing.JFrame {
 
     boolean t1,t2,t3,t4,t5,t6;
-    private int pontos,pontos1,pontos2,pontos3,pontos4,pontos5;
-    private int soma;
+    public static int pontos,pontos1,pontos2,pontos3,pontos4,pontos5;
+    public static int soma;
+    private ArquivoDAO arquivodao;
+    private ArquivoDTO arquivodto;
+    
+    
     public FasePlay1() {
         initComponents();
          pontos=pontos1=pontos2=pontos3=pontos4=pontos5=soma=0;
+         
+         arquivodao= new ArquivoDAO();
+         arquivodto= new ArquivoDTO();
     }
 
     /**
@@ -268,8 +277,18 @@ public class FasePlay1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         soma=pontos+pontos1+pontos2+pontos3+pontos4+pontos5; 
-        System.out.printf("Acessou a soma de pontos");
-
+        arquivodto.setId_um(10);
+        arquivodto.setUmpeca_um(pontos);
+        arquivodto.setUmpeca_dois(pontos1);
+        arquivodto.setUmpeca_tres(pontos2);
+        arquivodto.setUmpeca_quatro(pontos3);
+        arquivodto.setUmpeca_cinco(pontos4);
+        arquivodto.setUmpeca_seis(pontos5);
+        arquivodto.setTotal_pecasum(soma);
+        arquivodao.InserirPecasFasesUm(arquivodto);
+        
+        
+        
         if(soma==6){
             System.out.printf("Acessou a tela 2");
             ProximaFase1  proximafase1 = new ProximaFase1();

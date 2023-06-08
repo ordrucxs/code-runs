@@ -4,6 +4,7 @@
  */
 package view;
 
+import DAO.ConexaoBD;
 import DTO.RegistroNome;
 
 
@@ -15,7 +16,7 @@ import DTO.RegistroNome;
  */
 public class TelaIniciar extends javax.swing.JFrame {
     
-    
+    public ConexaoBD conexao=new ConexaoBD();
     /**
      * Creates new form TelaIniciar
      */
@@ -23,7 +24,7 @@ public class TelaIniciar extends javax.swing.JFrame {
     
     public TelaIniciar() {
         initComponents();
-        
+        conexao.conectaBD();
     }
 
     /**

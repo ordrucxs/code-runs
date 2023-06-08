@@ -4,6 +4,8 @@
  */
 package view;
 
+import DAO.ArquivoDAO;
+import DTO.ArquivoDTO;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -14,10 +16,17 @@ import javax.swing.JOptionPane;
 public class Fase3 extends javax.swing.JFrame {
 
     boolean c1,c2,c3,c4;
-    private int pontos1,pontos2,pontos3,pontos4,somafase3;
+    public int pontos1,pontos2,pontos3,pontos4,somafase3;
+    private ArquivoDAO arquivodao;
+    private ArquivoDTO arquivodto;
+    
+    
     public Fase3() {
         initComponents();
         pontos1=pontos2=pontos3=pontos4=somafase3=0;
+        arquivodao = new ArquivoDAO();
+        arquivodto = new ArquivoDTO();
+        
     }
 
     /**
@@ -235,6 +244,14 @@ public class Fase3 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         somafase3=pontos1+pontos2+pontos3+pontos4;
+        
+        arquivodto.setId_tres(1);
+        arquivodto.setTrespecadois(pontos1);
+        arquivodto.setTrespeca_dois(pontos2);
+        arquivodto.setTrespeca_tres(pontos3);
+        arquivodto.setTrespeca_quatro(pontos4);
+        arquivodto.setTotal_pecastres(somafase3);
+        arquivodao.InserirPecasFasesTres(arquivodto);
         
          if(somafase3==4){
             Creditos creditos = new Creditos();

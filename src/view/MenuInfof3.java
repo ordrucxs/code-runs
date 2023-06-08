@@ -4,17 +4,25 @@
  */
 package view;
 
+import DAO.ArquivoDAO;
+import DTO.ArquivoDTO;
+
 /**
  *
  * @author pedro
  */
 public class MenuInfof3 extends javax.swing.JFrame {
+private ArquivoDAO arquivodao;
+private ArquivoDTO arquivodto;
+private Fase3 fase3;
 
     /**
      * Creates new form MenuInfof3
      */
     public MenuInfof3() {
         initComponents();
+        arquivodao= new ArquivoDAO();
+        arquivodto= new ArquivoDTO();
     }
 
     /**
@@ -82,6 +90,14 @@ public class MenuInfof3 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        arquivodto.setId_tres(1);
+        arquivodto.setTrespecadois(fase3.pontos1);
+        arquivodto.setTrespeca_dois(fase3.pontos2);
+        arquivodto.setTrespeca_tres(fase3.pontos3);
+        arquivodto.setTrespeca_quatro(fase3.pontos4); 
+        arquivodto.setTotal_pecastres(fase3.somafase3);
+        arquivodao.InserirPecasFasesTres(arquivodto);
+        
         System.exit(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 

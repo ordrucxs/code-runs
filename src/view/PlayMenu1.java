@@ -4,17 +4,16 @@
  */
 package view;
 
-/**
- *
- * @author pedro
- */
-public class PlayMenu1 extends javax.swing.JFrame {
+import DAO.ArquivoDAO;
+import javax.swing.JOptionPane;
 
-    /**
-     * Creates new form PlayMenu1
-     */
+public class PlayMenu1 extends javax.swing.JFrame {
+private ArquivoDAO arquivodao;
+        
+    
     public PlayMenu1() {
         initComponents();
+        arquivodao = new ArquivoDAO();
     }
 
     /**
@@ -76,6 +75,11 @@ public class PlayMenu1 extends javax.swing.JFrame {
         botaofase3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase3play.png"))); // NOI18N
         botaofase3.setBorderPainted(false);
         botaofase3.setContentAreaFilled(false);
+        botaofase3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaofase3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(botaofase3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 420, -1, -1));
 
         botaofase2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase2play.png"))); // NOI18N
@@ -120,8 +124,26 @@ public class PlayMenu1 extends javax.swing.JFrame {
     }//GEN-LAST:event_botaosairActionPerformed
 
     private void botaofase2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaofase2ActionPerformed
-       
+if(arquivodao.Listarfaseum()!=null){
+        Fase2 fase2 = new Fase2();
+        fase2.setVisible(true);
+        dispose();
+
+} else{
+    JOptionPane.showMessageDialog(null, "VOCÊ AINDA NÃO DESBLOQUEOU A FASE 2");
+}
     }//GEN-LAST:event_botaofase2ActionPerformed
+
+    private void botaofase3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaofase3ActionPerformed
+       if(arquivodao.Listarfasedois()!=null){
+        Fase3 fase3 = new Fase3();
+        fase3.setVisible(true);
+        dispose();
+
+} else{
+    JOptionPane.showMessageDialog(null, "VOCÊ AINDA NÃO DESBLOQUEOU A FASE 3");
+} 
+    }//GEN-LAST:event_botaofase3ActionPerformed
 
     /**
      * @param args the command line arguments

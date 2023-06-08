@@ -4,6 +4,8 @@
  */
 package view;
 
+import DAO.ArquivoDAO;
+import DTO.ArquivoDTO;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -13,12 +15,17 @@ import javax.swing.JOptionPane;
  */
 public class Fase2 extends javax.swing.JFrame {
  private boolean p1,p2,p3, p4, p5, p6;
- private int d1,d2,d3,d4,d5,d6,somafase2;
+ public static int d1,d2,d3,d4,d5,d6,somafase2;
+ private ArquivoDTO arquivodto;
+ private ArquivoDAO arquivodao;
     /**
      * Creates new form Fase2
      */
     public Fase2() {
         initComponents();
+        
+        arquivodto = new ArquivoDTO();
+        arquivodao = new ArquivoDAO();
     }
 
     /**
@@ -91,7 +98,7 @@ public class Fase2 extends javax.swing.JFrame {
                 ibt5fase2MouseDragged(evt);
             }
         });
-        getContentPane().add(ibt5fase2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
+        getContentPane().add(ibt5fase2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
 
         ibt6fase2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/fase2return01.png"))); // NOI18N
         ibt6fase2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -257,9 +264,19 @@ public class Fase2 extends javax.swing.JFrame {
     }//GEN-LAST:event_ibtr6fase2MouseEntered
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       somafase2=d1+d2+d3+d4+d5;
+       somafase2=d1+d2+d3+d4+d5+d6;
         
-         if(somafase2==5){
+        arquivodto.setId_dois(1);
+        arquivodto.setDoispeca_um(d1);
+        arquivodto.setDoispeca_dois(d2);
+        arquivodto.setDoispeca_tres(d3);
+        arquivodto.setDoispeca_quatro(d4);
+        arquivodto.setDoispeca_cinco(d5);
+        arquivodto.setDoispeca_seis(d6);
+        arquivodto.setTotal_pecasdois(somafase2);
+        arquivodao.InserirPecasFasesDois(arquivodto);
+       
+         if(somafase2==6){
           ProximaFase2 proximafase2= new ProximaFase2();
           proximafase2.setVisible(true);
           dispose();

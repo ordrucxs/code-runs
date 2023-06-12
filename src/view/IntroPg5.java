@@ -45,7 +45,7 @@ public class IntroPg5 extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 590, 250, 90));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/intropg5.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 760));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 1410, 840));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -302,7 +302,6 @@ public class FasePlay1 extends javax.swing.JFrame {
         
         
         if(soma==6){
-            System.out.printf("Acessou a tela 2");
             ProximaFase1  proximafase1 = new ProximaFase1();
             proximafase1.setVisible(true);
             dispose();

@@ -46,7 +46,7 @@ public class IntroPg3 extends javax.swing.JFrame {
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 10, 260, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resouces/intropg3.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 760));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -80, 1520, 920));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

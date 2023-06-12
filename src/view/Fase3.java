@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 public class Fase3 extends javax.swing.JFrame {
 
     boolean c1,c2,c3,c4;
-    public int pontos1,pontos2,pontos3,pontos4,somafase3;
+    public static int pontos1,pontos2,pontos3,pontos4,somafase3;
     private ArquivoDAO arquivodao;
     private ArquivoDTO arquivodto;
     
